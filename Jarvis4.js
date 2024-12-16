@@ -21,8 +21,12 @@ recognition.onresult = function(event) {
     transcript = transcript.toLowerCase();
     console.log(`chinnu: ${transcript}`);
     
-    if (transcript.includes("hello") || transcript.includes("hi") || transcript.includes("hello chinnu") || transcript.includes("hello chinu") || transcript.includes("hi chinnu")) {
+    if (transcript.includes("hello")) {
         readOut("hello sir welcome to Chinnu jarvis ");
+        console.log("hello sir");
+    }
+    if (transcript.includes("who are you")) {
+        readOut("hello sir welcome to chinnu jarvis vitual assistance! . I’m JARVIS your personal virtual assistant designed to web browsing easier and smarter.");
         console.log("hello sir");
     }
     if (transcript.includes("audible")) {
